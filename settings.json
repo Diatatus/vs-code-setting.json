@@ -1,0 +1,123 @@
+{
+  // Fenêtre et barre de titre
+  "window.title": "${activeEditorFull}${separator}${rootName}",
+  "window.zoomLevel": 0.5,
+  "window.restoreWindows": "all",
+  "window.newWindowDimensions": "inherit",
+  "window.titleBarStyle": "custom",
+  "window.closeWhenEmpty": false,
+
+  // Editeur de texte
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.fontFamily": "'Liga SFMono Nerd Font', 'SFMono', 'Roboto Mono', 'Fira Code', 'Victor Mono', 'Cascadia Code', 'JetBrains Mono', 'Dank Mono', 'Consolas', 'Liberation Mono', 'Menlo', 'Courier', 'monospace'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 21,
+  "editor.mouseWheelZoom": false,
+  "editor.renderLineHighlight": "none",
+  "editor.autoIndent": "full",
+  "editor.tabSize": 2,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.matchBrackets": "always",
+  "editor.renderWhitespace": "none",
+  "editor.wordSeparators": "./\\()\"':,.;<>~!@#%^&*|+=[]{}`~?",
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnPaste": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+
+  // Zoom et scrolling
+  "editor.mouseWheelScrollSensitivity": 0,
+  "editor.scrollbar.verticalScrollbarSize": 5,
+  "editor.scrollbar.horizontalScrollbarSize": 5,
+
+  // Minimap
+  "editor.minimap.enabled": true,
+
+  // Explorateur de fichiers
+  "explorer.openEditors.visible": 100,
+  "files.exclude": {
+    "**/tmp/**": true,
+    "**/node_modules/**": true,
+    "**/bower_components/**": true
+  },
+  "files.watcherExclude": {
+    "**/tmp/**": true,
+    "**/node_modules/**": true
+  },
+  "files.autoSaveDelay": 0,
+
+  // Recherche
+  "search.enableSearchEditorPreview": true,
+  "search.exclude": {
+    "**/*.bundle.js": true,
+    "**/*all.js": true,
+    "**Library": true,
+    "~/Library**": true
+  },
+  "search.collapseResults": "alwaysCollapse",
+  "search.quickOpen.history.filterSortOrder": "recency",
+  "search.quickOpen.includeSymbols": true,
+
+  // Thème et apparence
+  "workbench.colorCustomizations": {
+    "scrollbar.shadow": "#ffffff00",
+    "widget.shadow": "#ffffff00",
+    "editor.selectionBackground": "#da70d655",
+    "editor.wordHighlightBackground": "#6940c5FC",
+    "editor.findMatchBackground": "#9652a4fc",
+    "editor.findMatchHighlightBackground": "#4b2e51FC",
+    "sideBar.foreground": "#777777",
+    "sideBar.border": "#444444",
+    "scrollbarSlider.background": "#444444"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "customizeUI.activityBar": "regular",
+  "customizeUI.titleBar": "frameless",
+
+  // Intégration Git
+  "git.autofetch": true,
+
+  // Extensions spécifiques
+  "eslint.format.enable": true,
+  "eslint.run": "onSave",
+  "stylelint.validate": ["css", "scss"],
+  "stylelint.customSyntax": "postcss-scss",
+  "phpcs.enable": true,
+  "phpcs.executablePath": "/usr/local/bin/phpcs",
+  "phpcs.showSources": true,
+  "phpcs.ignorePatterns": ["wp-config.php", "*/ignored-dir/*", "*/content/plugins/*"],
+  "phpCodeSniffer.autoExecutable": true,
+  "phpcbf.enable": true,
+  "phpcbf.documentFormattingProvider": true,
+
+  // Terminal
+  "terminal.integrated.fontFamily": "'Liga SFMono Nerd Font', 'SFMono', 'Roboto Mono', 'Fira Code', 'Victor Mono', 'Cascadia Code', 'JetBrains Mono', 'Dank Mono', 'Consolas', 'Liberation Mono', 'Menlo', 'Courier', 'monospace'",
+  "terminal.integrated.fontSize": 10,
+  "terminal.integrated.lineHeight": 1,
+  "terminal.integrated.enablePersistentSessions": false,
+  "terminal.integrated.gpuAcceleration": "off",
+
+  // Développement par langage
+  "[php]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "obliviousharmony.vscode-php-codesniffer"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[css]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
+  "tabnine.experimentalAutoImports": true,
+  "editor.unicodeHighlight.invisibleCharacters": false
+}
