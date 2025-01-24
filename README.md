@@ -1,4 +1,5 @@
 VS Code Settings
+
 This repository contains a custom settings.json configuration file for Visual Studio Code.
 By using these settings, you can quickly align your development environment with a pre-configured setup.
 
